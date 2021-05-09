@@ -1,0 +1,36 @@
+.whrapher{
+	width: 300px;
+	position: relative;
+}
+.box{
+	width: 1400px;
+	height: 250px;
+	background-color: pink;
+	border-radius: 20px;
+	position: absolute;
+	animation-name: mybox;
+	animation-duration: 5s;
+	animation-delay: 3s;
+	animation-timing-function: ease;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-fill-mode: backwards;
+}
+.anni{
+	font-size: 100px;
+	text-align: center;
+	color: yellow; 
+}
+@keyframes mybox{
+	0%{
+		top: 10px;
+	}
+	50%{
+		top: 200px;
+		background-color: red;
+	}
+	100%{
+ 		top: 400px; 
+ 		background-color: black;
+	}
+}
